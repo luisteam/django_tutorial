@@ -44,7 +44,7 @@ class QuestionViewTests(TestCase):
         Questions with a pub_date in the future should not be displayed on
         the index page.
         """
-        create_question(question_text="Future question.", days=30)
+        #create_question(question_text="Future question.", days=30)
         response = self.client.get(reverse('polls:index'))
         #self.assertContains(response, "No polls are available.")
         self.assertQuerysetEqual(response.context['latest_question_list'], [])
