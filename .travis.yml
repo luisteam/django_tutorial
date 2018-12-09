@@ -2,6 +2,5 @@ language: python
 install:
 - pip install django==1.10
 - pip install gunicorn
-- pip install path.py
 script:
 - python manage.py test
