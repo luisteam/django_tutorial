@@ -1,5 +1,6 @@
-language: python3
+language: python
 install:
-- pip install -r requirements.txt
+- pip install django==1.10
+- pip intall gunicorn
 script:
 - python manage.py test
